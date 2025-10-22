@@ -32,8 +32,6 @@ dt = t.data(2)-t.data(1);
 
 integral = integral*dt*0.5;
 
-
-
 trapez = trapz(P)*dt;
 
 fprintf('Lasten izračunan integral je %f. \n', integral)
