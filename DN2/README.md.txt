@@ -1,0 +1,3 @@
+Najhitrejša je metoda z uporabo funkcije "griddedInterpolant". V dokumentaciji piše, da je hitrejša zato, ker ima zagotovilo, da so vse točke že lepo postavljene v pravokotno mrežo, na kateri lahko interpolacijo nato izvede. Funkcija "scatteredInterpolant" namreč tega zagotovila nima in išče interpolacijske funkcije med najbližjimi točkami (za vsako točko preveri, katere so njene sosede, šele nato pa izvede intrepolacijo med njimi.
+
+V mojem primeru je funkcija "griddedInterpolant" bistveno hitrejša tudi zato, ker sem ji že v naprej močno omejil območje, na katerem izvaja interpolacijo, saj mi je MATLAB javil napako, da ne more zgraditi mreže iz obstoječih podatkov, ker bi ta popolnoma presegala omejitve prostega spomina v računalniku.
